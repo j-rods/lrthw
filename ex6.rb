@@ -14,16 +14,16 @@ do_not = "don't"
 # defines a variable that stores a string containing 2 variables
 y = "Those who know #{binary} and those who #{do_not}."
 
-# prints variable x, which is a string containing 1 variable
+# outputs variable x, which is a string containing 1 variable
 puts x
 
-# prints variable y, which is a string containing 2 variables
+# outputs variable y, which is a string containing 2 variables
 puts y
 
-# prints a string which contains variable x, and variable x has a stored string which in itself contains 1 variable
+# outputs a string which contains variable x, and variable x has a stored string which in itself contains 1 variable
 puts "I said: #{x}."
 
-# prints a string which contains variable y within single quotation marks, and variable y has a stored string which in itself contains 2 variables
+# outputs a string which contains variable y within single quotation marks, and variable y has a stored string which in itself contains 2 variables
 puts "I also said: '#{y}'."
 
 
@@ -33,7 +33,7 @@ hilarious = false
 # defines a variable that stores a string containing the boolean variable above
 joke_evaluation = "Isn't that joke so funny?! #{hilarious}"
 
-# prints variable joke_evaluation, which is a variable that has stored a string containing in itself another variable, which is the boolean variable
+# outputs variable joke_evaluation, which is a variable that has stored a string containing in itself another variable, which is the boolean variable
 puts joke_evaluation
 
 # defines a variable that stores a string
@@ -42,6 +42,6 @@ w = "This is the left side of..."
 # defines a variable that stores a string
 e = "a string with a right side."
 
-# prints a concatenation of 2 variables, each containing a stored string, and in total, form a sentence
+# outputs a concatenation of 2 variables, each containing a stored string, and in total, form a sentence
 puts w + e
 
