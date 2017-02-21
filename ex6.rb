@@ -45,3 +45,7 @@ e = "a string with a right side."
 # outputs a concatenation of 2 variables, each containing a stored string, and in total, form a sentence
 puts w + e
 
+# There are no occurences of a string put inside a string, but there is a total of 4 times where a variable that stores a string is put inside a string:
+# 1 and 2:  y = "Those who know #{binary} and those who #{do_not}."
+# 3: puts "I said: #{x}."
+# 4: puts "I also said: '#{y}'."
