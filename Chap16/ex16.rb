@@ -41,7 +41,6 @@ puts "I'm going to write these to the file."
 # "\n" creates a split section, an empty line between each new written line
 target.write(line1 + "\n" + line2 + "\n" +  line3 + "\n")
 
-
 puts "And finally, we close it."
 
 #closes file
