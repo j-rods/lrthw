@@ -3,9 +3,9 @@
 
 fav_fruit, fav_chocolate = ARGV
 
-#outputs the first argument which is fruit
+#outputs the first unpacked argument which is fruit
 puts "Your favourite fruit is #{fav_fruit}, but I prefer mangoes."
-#outputs the second argument which is kinderbueno
+#outputs the second unpacked argument which is kinderbueno
 puts "Your favourite chocolate is #{fav_chocolate}, hmm I like that."
 
 #changes first and second argument for 2 new arguments given with gets
