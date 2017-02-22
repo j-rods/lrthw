@@ -3,7 +3,7 @@
 # gets the first argument / used to get 1 argument
 user_name = ARGV.first
 
-#variable prompt set to >
+#variable prompt
 prompt = 'answer below ' 
 
 puts "Hi #{user_name}."
