@@ -1,7 +1,6 @@
 # use ARGV to get filename
 filename = ARGV.first
 
-
 txt = open(filename)
 
 # outputs a message stating it is opening filename, and includes the file's name
@@ -23,7 +22,6 @@ print "Type the filename again: "
 # replacing with gets.chomp gives error "ex15.rb:24:in `initialize': No such file or directory"
 # $stdin.gets.chomp is better used with ARGV because gets.chomp causes errors
 file_again = $stdin.gets.chomp
-
 
 # variable txt_again stores the function open file
 txt_again = open(file_again)
