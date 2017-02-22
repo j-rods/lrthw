@@ -1,10 +1,7 @@
-
 from_file, to_file = ARGV
 
 in_file = open(from_file)
 indata = in_file.read
-
-
 
 # merged confirmation with files to be copied from and to
 puts "Hit RETURN to copy #{from_file} to #{to_file}, or CTRL-C to abort."
