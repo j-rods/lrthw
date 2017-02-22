@@ -22,7 +22,6 @@ $stdin.gets
 puts "Starting the overwriting process..."
 target = open(filename, 'w')
 
-
 # prompts user to continue to next step
 puts "File is ready. Hit RETURN to continue."
 # gets input of user hitting RETURN
@@ -45,7 +44,6 @@ puts "Process Complete."
 
 # closes file after being opened and rewritten.
 target.close
-
 
 print "Type the filename to view new contents: "
 
