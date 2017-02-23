@@ -2,11 +2,13 @@
 input_file = ARGV.first
 
 # defines function print_all that takes an argument f
+# the passed argument will be read
 def print_all(f)
 	puts f.read
 end
 
 # defines function rewind that takes an argument f
+# the passed argument will seek an amount
 def rewind(f)
 	f.seek(0)
 end
