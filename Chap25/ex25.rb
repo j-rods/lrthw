@@ -25,7 +25,7 @@ module Ex25
   # takes in a full sentence and returns the sorted words
   def Ex25.sort_sentence(sentence)
   	words = Ex25.break_words(sentence)
-  	return Ex25.sort_words(words)
+    return Ex25.sort_words(words)
   end
 
   # prints the first and last words of the sentence
