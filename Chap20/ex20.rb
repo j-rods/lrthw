@@ -4,18 +4,18 @@ input_file = ARGV.first
 # defines function print_all that takes an argument f
 # the passed argument will be read
 def print_all(f)
-	puts f.read
+  puts f.read
 end
 
 # defines function rewind that takes an argument f
 # the passed argument will seek an amount
 def rewind(f)
-	f.seek(0)
+  f.seek(0)
 end
 
 # defines function print_a_line that takes 2 arguments, line_count and f
 def print_a_line(line_count, f)
-	puts "#{line_count}, #{f.gets.chomp}"
+  puts "#{line_count}, #{f.gets.chomp}"
 end
 
 # defines variable current_file that stores the function open input_file
