@@ -119,7 +119,7 @@ print_one("First!")
 
 # defines a function cheese_and_crackers that take 2 arguments cheese_count and boxes_of_crackers
 def cheese_and_crackers(cheese_count, boxes_of_crackers)
-	puts "You have #{cheese_count} cheeses!" # unpacks argument cheese_count
+  puts "You have #{cheese_count} cheeses!" # unpacks argument cheese_count
 end
 
 # pass numbers directly
