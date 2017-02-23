@@ -6,7 +6,7 @@ def cheese_and_crackers(cheese_count, boxes_of_crackers)
 	puts "Get a blanket.\n" # new line escape sequence
 end
 
-# calls function cheese_and_crackers and populate the 2 arguments with:
+# calls function cheese_and_crackers and passes in the 2 arguments with:
   # 1st a value of 20
   # 2nd a value of 30
 puts "We can just give the function numbers directly:"
@@ -18,18 +18,18 @@ puts "OR, we can use variables from our script:"
 amount_of_cheese = 10
 amount_of_crackers = 50
 
-# calls function cheese_and_grackers, which populate the 2 arguments with:
+# calls function cheese_and_grackers, which passes in  the 2 arguments with:
   # 1st argument with variable amount_of_cheese
   # 2nd argument with amount_of_crackers
 cheese_and_crackers(amount_of_cheese, amount_of_crackers)
 
-# calls function cheese_and_crackers, which populate the 2 arguments with:
+# calls function cheese_and_crackers, which passes in the 2 arguments with:
   # 1st calculates a sum of 2 values that give a total of 30
   # 2nd calculates a sum of 2 values that give a total of 11
 puts "We can even do math inside too:"
 cheese_and_crackers(10 + 20, 5 + 6)
 
-# calls function cheese_and_crackers, which populates the 2 arguments with:
+# calls function cheese_and_crackers, which passes in the 2 arguments with:
   # 1st calculates the value of variable amount_of_cheese and sums value of 100
   # 2nd calculates the value of variable amount_of_crackers and sums value of 1000
 puts "And we can combine the two, variables and math:"
