@@ -1,31 +1,15 @@
- intro_story = <<-STORY
-   You are walking down a brick road. On the side of the road there is a wizard.
-   The wizard greets you, and asks if you would like to join him on an adventure.
-   You accept, and follow him into the enchanted forest...
-   
-   As you go deeper into the forest, you see strange creatures lurk in the shadows...
-   
-   You arrive at a cave. The wizard explains that there is a creature that has stolen a valuable jewel.
-   Please retrieve this jewel, and you will be kindly rewarded with many riches...
-   Do you accept this quest?
- STORY
 
- quest_accepted_story = <<-STORY
-   You have accepted this quest, and venture into the dark cave.
-   You walk, and walk...it's getting darker...
-   You carry a torch, but the flames grow weak.
-  
-   1. You stop to try and increase the flames of your torch.
-   2. You keep walking.
- STORY
-
- taking_the_diamond_story = <<-STORY
-   As you leave, you can hear a faint cry, maybe you took someone's precious treasure!
-   You reach the exit, and the wizard is waiting.
-   You took so long that he was asleep by a tree, snoring.
-   You wake him up and hand him the jewel.
-   He rewards you with a bag of gems. The End!
- STORY
+intro_story = <<-STORY
+You are walking down a brick road. On the side of the road there is a wizard.
+The wizard greets you, and asks if you would like to join him on an adventure.
+You accept, and follow him into the enchanted forest...
+   
+As you go deeper into the forest, you see strange creatures lurk in the shadows...
+   
+You arrive at a cave. The wizard explains that there is a creature that has stolen a valuable jewel.
+Please retrieve this jewel, and you will be kindly rewarded with many riches...
+Do you accept this quest?
+STORY
 
 puts intro_story
 
@@ -33,6 +17,16 @@ print "Yes or No:"
 accept_quest = $stdin.gets.chomp
 
 if accept_quest == "Yes" || accept_quest == "yes"
+
+  quest_accepted_story = <<-STORY
+  You have accepted this quest, and venture into the dark cave.
+  You walk, and walk...it's getting darker...
+  You carry a torch, but the flames grow weak.
+  
+  1. You stop to try and increase the flames of your torch.
+  2. You keep walking.
+  STORY
+
   puts quest_accepted_story
   print "> "
   stop_to_check_torch = $stdin.gets.chomp
@@ -99,6 +93,15 @@ if accept_quest == "Yes" || accept_quest == "yes"
       diamond_or_gold = $stdin.gets.chomp
 
       if diamond_or_gold == "1"
+
+        taking_the_diamond_story = <<-STORY
+        As you leave, you can hear a faint cry, maybe you took someone's precious treasure!
+        You reach the exit, and the wizard is waiting.
+        You took so long that he was asleep by a tree, snoring.
+        You wake him up and hand him the jewel.
+        He rewards you with a bag of gems. The End!
+        STORY
+
         puts taking_the_diamond_story
       else
       	puts "You take so long to fill your pockets, that someone hits you on your head."
