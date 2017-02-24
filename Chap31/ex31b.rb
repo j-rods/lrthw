@@ -50,7 +50,7 @@ if accept_quest == "Yes" || accept_quest == "yes"
       puts "The spiders wrap you in web and you are trapped and unconscious for hours."
       puts " "
       puts "You wake up..."
-      puts "1. Use pocket knife to cut the web and break free"
+      puts "1. Use pocket knife to cut the web and break free."
       puts "2. Scream for help, maybe someone can rescue you."
 
       print "> "
@@ -59,14 +59,14 @@ if accept_quest == "Yes" || accept_quest == "yes"
         if find_help == "1"
           puts "You free yourself and flee the cave."
         else
-          puts "The spiders hear you, and you become spider supper. The end!"     	
+          puts "The spiders hear you, and you become spider supper. The End!"     	
         end
 
 
     else
       puts "You hear more noises and you follow them."
       puts "Your torch flame goes out."
-      puts "You can't see where you are walking and accidentally fall into a bottomless hole. The end!"
+      puts "You can't see where you are walking and accidentally fall into a bottomless hole. The End!"
     end
 
   else
@@ -102,7 +102,7 @@ if accept_quest == "Yes" || accept_quest == "yes"
         puts taking_the_diamond_story
       else
       	puts "You take so long to fill your pockets, that someone hits you on your head."
-      	puts "When you wake up you are being prepared to be cooked by giant trolls. The end!"
+      	puts "When you wake up you are being prepared to be cooked by giant trolls. The End!"
       end
     end
   end
