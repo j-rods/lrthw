@@ -1,34 +1,26 @@
 
-def gold_room
-  puts "This room is full of gold. How much do you take?"
+def start
+  puts "You are in a dark room."
+  puts "There is a door to your right and a door to your left."
+  puts "Which one do you take?"
 
   print "> "
   choice = $stdin.gets.chomp
 
-  if choice.include?("0") || choice.include?("1")
-    how_much = choice.to_i
+  if choice == "left"
+    bear_room
+  elsif choice == "right"
+    cthullhu_room
   else
-  	dead("The skeleton guardian awakes, swings its sword at you and chops your head off. The End!")
-  	exit(0)
-  end
-
-  if how_much < 50
-    puts "Nice, you're not greedy, you win!"
-    # exit(0) is a parameter passed to exit the program
-    exit(0)
-  else
-    dead("You greedy bastard!")
+    dead("You stumble around the room until you starve to death.")
   end
 end
 
 def bear_room
-  bear_story = <<-STORY
-  There is a bear here.
-  The bear has a bunch of honey.
-  The fat bear is in front of another door.
-  How are you going to move the bear?
-  STORY
-  puts bear_story
+  puts "There is a bear here."
+  puts "The bear has a bunch of honey."
+  puts "The fat bear is in front of another door."
+  puts "How are you going to move the bear?"
   bear_moved = false
 
   while true
@@ -47,6 +39,28 @@ def bear_room
     else
       puts "I got no idea what that means."
     end
+  end
+end
+
+def gold_room
+  puts "This room is full of gold. How much do you take?"
+
+  print "> "
+  choice = $stdin.gets.chomp
+
+  if choice.include?("0") || choice.include?("1")
+    how_much = choice.to_i
+  else
+    dead("The skeleton guardian awakes, swings its sword at you and chops your head off. The End!")
+    exit(0)
+  end
+
+  if how_much < 50
+    puts "Nice, you're not greedy, you win!"
+    # exit(0) is a parameter passed to exit the program
+    exit(0)
+  else
+    dead("You greedy bastard!")
   end
 end
 
@@ -85,26 +99,6 @@ end
 def dead(why)
   puts why, "Good job!"
   exit(0)
-end
-
-def start
-  intro_story = <<-STORY
-  You are in a dark room.
-  There is a door to your right and a door to your left.
-  Which one do you take?
-  STORY
-  puts intro_story
-
-  print "> "
-  choice = $stdin.gets.chomp
-
-  if choice == "left"
-    bear_room
-  elsif choice == "right"
-    cthullhu_room
-  else
-    dead("You stumble around the room until you starve to death.")
-  end
 end
  
 start
